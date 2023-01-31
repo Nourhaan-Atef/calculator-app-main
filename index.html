@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <bodyz>
+    <div
+      class="h-screen font-League bg-mainBg flex flex-col justify-center items-center"
+    >
+      <!-- <h1
+        class="text-toggleBgRed w-96 font-large text-5xl bg-white p-3 mb-5 rounded-xl shadow-md"
+      >
+        Calculator App
+      </h1> -->
+      <main class="w-96">
+        <!-- Theme and header -->
+        <div class="flex justify-between items-center my-5">
+          <h2 class="text-white text-2xl font-extrabold">calc</h2>
+          <div class="flex justify-between items-end">
+            <p class="text-white font-bold">THEME</p>
+            <div class="flex flex-col ml-5">
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="w-16 h-6 bg-toggleBg flex justify-start rounded-3xl px-1 items-center cursor-pointer"
+                  id="toggle"
+                >
+                  <span
+                    class="w-4 h-4 bg-toggleBgRed rounded-full hover:bg-hoverRedKeyBg cursor-pointer"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Calculation Results -->
+
+        <div
+          id="resultArea"
+          type="text"
+          class="w-96 bg-screenBg text-white text-4xl font-bold py-8 px-2 rounded-lg flex justify-end items-center text-right border-none outline-none"
+        ></div>
+        <!-- Calculator Body (Buttons) -->
+        <div id="buttons">
+          <div class="grid grid-cols-4 bg-toggleBg rounded-md my-5 p-5 gap-5">
+            <!-- First Row -->
+            <button type="button" id="seven" class="btn button" value="7">
+              7
+            </button>
+            <button type="button" id="eight" class="btn button" value="8">
+              8
+            </button>
+            <button type="button" id="nine" class="btn button" value="9">
+              9
+            </button>
+            <button
+              type="button"
+              id="delete"
+              class="button bg-keyBgDarkBlue specialBtn border-keyShadowDrakBlue hover:bg-hoverBlueKeyBg"
+              value="delete"
+            >
+              DEL
+            </button>
+            <!-- Scand Row -->
+            <button type="button" id="four" class="btn button" value="4">
+              4
+            </button>
+            <button type="button" id="five" class="btn button" value="5">
+              5
+            </button>
+            <button type="button" id="six" class="btn button" value="6">
+              6
+            </button>
+            <button type="button" id="add" class="btn button" value="+">
+              +
+            </button>
+            <!-- Third Row -->
+            <button type="button" id="one" class="btn button" value="1">
+              1
+            </button>
+            <button type="button" id="two" class="btn button" value="2">
+              2
+            </button>
+            <button type="button" id="three" class="btn button" value="3">
+              3
+            </button>
+            <button type="button" id="subract" class="btn button" value="-">
+              -
+            </button>
+            <!-- Fourth Row -->
+            <button type="button" id="dot" class="btn button" value=".">
+              .
+            </button>
+            <button type="button" id="zero" class="btn button" value="0">
+              0
+            </button>
+            <button type="button" id="divisio" class="btn button" value="/">
+              /
+            </button>
+            <button type="button" id="multply" class="btn button" value="x">
+              *
+            </button>
+            <!-- Last Row -->
+
+            <button
+              type="button"
+              id="reset"
+              class="button col-span-2 specialBtn bg-keyBgDarkBlue border-keyShadowDrakBlue hover:bg-hoverBlueKeyBg"
+              value="reset"
+            >
+              RESET
+            </button>
+            <button
+              type="button"
+              id="Sum"
+              class="button col-span-2 specialBtn bg-toggleBgRed border-toggleBgDarkRed hover:bg-hoverRedKeyBg"
+              value="sum"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </bodyz>
+</html>
+
+<!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+<!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
